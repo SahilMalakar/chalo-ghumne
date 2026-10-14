@@ -1,0 +1,55 @@
+{
+  "folder": "src/assets/destinations",
+  "format": "webp",
+  "note": "Place these files in src/assets/destinations/. Then set `image` on the matching destination in src/data/destinations.ts. Filenames must match exactly.",
+  "images": [
+    {
+      "file": "living-root-bridge.webp",
+      "name": "Living Root Bridge",
+      "id": "living-root-bridge",
+      "subject": "Double-decker living root bridge in Meghalaya"
+    },
+    {
+      "file": "dawki-umngot.webp",
+      "name": "Dawki / Umngot River",
+      "id": "dawki-umngot",
+      "subject": "Clear turquoise river with a boat in Meghalaya"
+    },
+    {
+      "file": "laitlum-canyon.webp",
+      "name": "Laitlum Canyon",
+      "id": "laitlum-canyon",
+      "subject": "Green hills and misty canyon in Meghalaya"
+    },
+    {
+      "file": "nohkalikai-falls.webp",
+      "name": "Nohkalikai Falls",
+      "id": "nohkalikai-falls",
+      "subject": "Waterfall dropping from forested cliffs in Meghalaya"
+    },
+    {
+      "file": "tawang-monastery.webp",
+      "name": "Tawang Monastery",
+      "id": "tawang-monastery",
+      "subject": "Monastery among the Himalayan mountains in Arunachal Pradesh"
+    },
+    {
+      "file": "dzukou-valley.webp",
+      "name": "Dzukou Valley",
+      "id": "dzukou-valley",
+      "subject": "Rolling green hills in Nagaland"
+    },
+    {
+      "file": "ziro-valley.webp",
+      "name": "Ziro Valley",
+      "id": "ziro-valley",
+      "subject": "Terraced rice fields and village landscape in Arunachal Pradesh"
+    },
+    {
+      "file": "hornbill-festival.webp",
+      "name": "Hornbill Festival",
+      "id": "hornbill-festival",
+      "subject": "Traditional cultural dance at a festival in Nagaland"
+    }
+  ]
+}
