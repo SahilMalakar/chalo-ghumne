@@ -7,7 +7,7 @@ export function ExploreWord() {
         <div className="hero-scrim" aria-hidden="true" />
         <h1
           id="home-title"
-          className="display relative text-center text-[clamp(3rem,11vw,8rem)] text-text"
+          className="explore-fade display relative text-center text-[clamp(3rem,11vw,8rem)] text-gold dark:text-text"
         >
           {hero.word}
         </h1>

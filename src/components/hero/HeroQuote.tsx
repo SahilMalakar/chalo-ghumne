@@ -12,7 +12,7 @@ export function HeroQuote() {
     if (reduced) return
     const id = window.setInterval(() => {
       setIndex((current) => (current + 1) % hero.quotes.length)
-    }, 3800)
+    }, 1500)
     return () => window.clearInterval(id)
   }, [reduced])
 
@@ -24,7 +24,7 @@ export function HeroQuote() {
           <p
             key={quote}
             className={cn(
-              "text-base leading-snug text-text transition-opacity duration-400 motion-reduce:transition-none md:text-lg",
+              "text-base leading-snug font-bold dark:font-normal text-text drop-shadow-[0_2px_8px_rgba(247,244,236,0.95)] transition-opacity duration-400 motion-reduce:transition-none dark:drop-shadow-none md:text-lg",
               active ? "opacity-100" : "pointer-events-none absolute inset-0 opacity-0",
             )}
             aria-hidden={!active}

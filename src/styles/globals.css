@@ -132,6 +132,15 @@
   line-height: 0.92;
 }
 
+@utility z-35 {
+  z-index: 35;
+}
+
+.explore-fade {
+  -webkit-mask-image: linear-gradient(to bottom, black 82%, transparent 100%);
+  mask-image: linear-gradient(to bottom, black 82%, transparent 100%);
+}
+
 .container-x {
   width: 100%;
   min-width: 0;

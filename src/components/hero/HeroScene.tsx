@@ -46,6 +46,19 @@ export function HeroScene() {
           className="hero-photo h-full w-full object-cover object-[center_40%]"
         />
       </motion.div>
+      {/* Foreground mountain overlay — sits above EXPLORE text (z-35) */}
+      <motion.div
+        className="absolute inset-x-0 top-[18%] bottom-0 z-35"
+        style={shift ? { y: shift.mountainY } : undefined}
+      >
+        <img
+          src={hero.mountain.src}
+          alt=""
+          width={hero.mountain.width}
+          height={hero.mountain.height}
+          className="hero-photo h-full w-full object-cover object-[center_40%]"
+        />
+      </motion.div>
       <motion.div
         className="absolute inset-x-0 bottom-[20%] h-36 bg-gradient-to-t from-bg/40 to-transparent"
         style={shift ? { y: shift.mistY } : undefined}
@@ -55,3 +68,4 @@ export function HeroScene() {
     </div>
   )
 }
+
