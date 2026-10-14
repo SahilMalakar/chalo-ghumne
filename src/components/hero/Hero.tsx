@@ -12,9 +12,9 @@ export function Hero() {
     <section
       id="home"
       aria-labelledby="home-title"
-      className="relative isolate min-h-[100svh] scroll-mt-24 overflow-hidden"
+      className="relative isolate min-h-svh scroll-mt-24 overflow-hidden"
     >
-      <div className="relative flex min-h-[100svh] flex-col">
+      <div className="relative flex min-h-svh flex-col">
         <HeroScene />
         <HeroTitle />
         <ExploreWord />

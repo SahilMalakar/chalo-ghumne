@@ -147,10 +147,38 @@
   padding-inline: 1.25rem;
 }
 
+
 .section {
+  position: relative;
+  isolation: isolate;
   padding-block: var(--space-section);
   scroll-margin-top: 6.5rem;
+  background-color: var(--surface);
+  box-shadow:
+    0 8px 24px rgba(22, 19, 15, 0.055),
+    0 -6px 18px -12px rgba(22, 19, 15, 0.12);
 }
+
+/* Subtle separation between adjacent sections */
+.section + .section {
+  box-shadow:
+    0 -10px 26px -16px rgba(22, 19, 15, 0.16),
+    0 8px 24px rgba(22, 19, 15, 0.045);
+}
+
+/* Dark mode: soft shadows without a bright glow */
+.dark .section {
+  box-shadow:
+    0 8px 28px rgba(0, 0, 0, 0.20),
+    0 -6px 18px -12px rgba(0, 0, 0, 0.30);
+}
+
+.dark .section + .section {
+  box-shadow:
+    0 -10px 26px -16px rgba(0, 0, 0, 0.35),
+    0 8px 24px rgba(0, 0, 0, 0.16);
+}
+
 
 .section-head {
   min-width: 0;

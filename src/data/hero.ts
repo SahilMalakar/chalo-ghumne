@@ -3,7 +3,7 @@ import type { HeroLink, HeroStat } from "@/types"
 
 export const hero = {
   word: "EXPLORE",
-  meta: ["Destination –", "Season –", "Altitude –"] as const,
+  meta: ["Destination  -", "Season  -", "Altitude"] as const,
   quotes: [
     "The mountains are calling and I must go.",
     "Not all those who wander are lost.",
