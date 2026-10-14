@@ -13,12 +13,12 @@ export function Reviews() {
         title={aboutPage.testimonialsTitle}
         subtitle={aboutPage.testimonialsSubtitle}
       />
-      <ul className="flex snap-x snap-mandatory list-none gap-[var(--space-grid)] overflow-x-auto p-0 md:grid md:grid-cols-2 md:overflow-visible">
+      <ul className="flex list-none flex-col gap-(--space-grid) p-0 md:grid md:grid-cols-2">
         {testimonials.map((review, index) => (
           <li
             key={review.id}
             className={cn(
-              "w-[85%] shrink-0 snap-start md:w-auto",
+              "w-[85%] shrink-0 snap-start rounded-lg border border-black/50 p-5 dark:border-white/50 md:w-auto",
               index === 0 && "md:col-span-2",
             )}
           >

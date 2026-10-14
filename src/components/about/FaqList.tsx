@@ -10,7 +10,7 @@ import { faqs } from "@/data/faq"
 
 export function FaqList() {
   return (
-    <div className="section-gap grid gap-[var(--space-head)] lg:grid-cols-2 lg:items-start">
+    <div className="section-gap grid gap-(--space-head) lg:grid-cols-2 lg:items-start">
       <SectionHeader
         label={aboutPage.faqLabel}
         title={aboutPage.faqTitle}
