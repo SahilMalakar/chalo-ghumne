@@ -28,7 +28,7 @@ export function HeroScene() {
         <NightSky />
       ) : (
         <motion.div
-          className="absolute inset-x-0 top-0 h-[58%] [mask-image:linear-gradient(to_bottom,black_70%,transparent)]"
+          className="absolute inset-x-0 top-0 h-[58%] mask-[linear-gradient(to_bottom,black_70%,transparent)]"
           style={shift ? { y: shift.cloudY } : undefined}
         >
           <CloudShaderDemo />
@@ -60,11 +60,11 @@ export function HeroScene() {
         />
       </motion.div>
       <motion.div
-        className="absolute inset-x-0 bottom-[20%] h-36 bg-gradient-to-t from-bg/40 to-transparent"
+        className="absolute inset-x-0 bottom-[20%] h-36 bg-linear-to-t from-bg/40 to-transparent"
         style={shift ? { y: shift.mistY } : undefined}
       />
-      <div className="absolute inset-0 hidden bg-gradient-to-b from-bg/60 via-bg/25 to-bg dark:block" />
-      <div className="absolute inset-x-0 bottom-0 h-[46%] bg-gradient-to-b from-transparent via-bg/80 to-bg" />
+      <div className="absolute inset-0 hidden bg-linear-to-b from-bg/60 via-bg/25 to-bg dark:block" />
+      <div className="absolute inset-x-0 bottom-0 h-[46%] bg-linear-to-b from-transparent via-bg/80 to-bg" />
     </div>
   )
 }
